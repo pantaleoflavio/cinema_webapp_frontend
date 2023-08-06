@@ -1,0 +1,310 @@
+@import 'theme';
+@import 'mixins';
+@import 'utils';
+@import '../fontawesome-free-6.4.0-web/css/all.css';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    @include default-size;
+    font-size: $base-font-size;
+    font-family: $default-font-family;
+}
+
+#header{
+    @include default-size;
+    padding: 15px 35px;
+    height: $header-lg-size;
+    border-bottom: $default-border map-get($mv-colors, mv-light-blue );
+    .mv-header-btn{
+        background-color: transparent;
+        padding: 0 15px;
+        border: $default-border map-get($mv-colors, mv-light-blue );
+        color: map-get($mv-colors, mv-white );
+        font-size: 1rem;
+        transition: $default-transition;
+        cursor: pointer;
+        letter-spacing: 5px;
+        font-weight: map-get($font-weights, bold );
+        text-transform: uppercase;
+        &:hover{
+            border: $default-border map-get($mv-colors, mv-white );
+            color: map-get($mv-colors, mv-light-blue );
+        }
+    }
+}
+
+#main {
+    @include default-size;
+    min-height: $screen-height;
+    background-color: map-get($mv-colors, mv-dark-blue ); /* Old browsers */
+    background-color: -moz-linear-gradient(top,  map-get($mv-colors, mv-dark-blue ) 0%, map-get($mv-colors, mv-blue-70p ) 50%, map-get($mv-colors, mv-dark-blue ) 100%); /* FF3.6-15 */
+    background-color: -webkit-linear-gradient(top,  map-get($mv-colors, mv-dark-blue ) 0%,map-get($mv-colors, mv-blue-70p ) 50%,map-get($mv-colors, mv-dark-blue ) 100%); /* Chrome10-25,Safari5.1-6 */
+    background-color: linear-gradient(to bottom,  map-get($mv-colors, mv-dark-blue ) 0%,map-get($mv-colors, mv-blue-70p ) 50%,map-get($mv-colors, mv-dark-blue ) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=map-get($mv-colors, mv-dark-blue ), endColorstr=map-get($mv-colors, mv-dark-blue ),GradientType=0 ); /* IE6-9 */
+}
+
+#logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    text-align: right;
+    background-color: map-get($mv-colors, mv-dark-blue );
+    img{
+        position: relative;
+        height: 100%;
+        width: auto;
+    }
+}
+#main-menu {
+    @include default-size;
+    height: 100%;
+    padding: 0 200px 0 150px;
+    display: none;
+    @include mq-min-width( map-get( $breakpoints, sm) ) {
+        display: block;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+            a {
+                color: map-get($mv-colors, mv-white );
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 1rem;
+                letter-spacing: 5px;
+                font-weight: map-get($font-weights, normal );
+                transition: $default-transition;
+                @include mq-min-width( map-get( $breakpoints, sm) ) {
+                    font-size: 0.7rem;
+                    font-weight: map-get($font-weights , light );
+                }
+                @include mq-min-width( map-get( $breakpoints, md) ) {
+                    font-size: 1.4rem;
+                    font-weight: map-get($font-weights , bold-light );
+                }
+                i{
+                    font-size: 1.35rem;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            &:hover a{
+                color:map-get($mv-colors, mv-light-blue );
+            }
+        }
+    }
+}
+
+#main-menu ul li .separator{
+    display: block;
+    margin: auto;
+    width: 1px;
+    height: 1.25rem;
+    background-color: map-get($mv-colors, mv-light-blue );
+    margin: 0 15px;
+}
+
+#second-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    #serch-icon{
+        color: map-get($mv-colors, mv-white );
+        font-size: 1.5rem;
+        transition: all 0.5s linear;
+        cursor: pointer;
+        &:hover{
+            color: map-get($mv-colors, mv-light-blue );
+        }
+    }
+}
+
+#footer {
+    @include default-size;
+    background-color: #01011b;
+    padding: 10px 0;
+    #footer-social-container {
+        position: relative;
+        color: map-get($mv-colors, mv-light-blue );
+        border-left: 0;
+        padding: 0;
+        text-align: center;
+        transform: translateY(0);
+        @include mq-min-width( map-get( $breakpoints, sm) ) {
+            border-left: 1px solid #00adef;
+            padding: 5px 0 5px 20px;
+            text-align: left;
+            transform: translateY(150%);
+        }
+        a {
+            margin-right: 10px;
+            text-decoration: none;
+            i {
+                color: map-get($mv-colors, mv-light-blue );
+                font-size: 3.5rem; 
+                transition: $default-transition;
+            }
+            &:hover i {
+                color: map-get($mv-colors, mv-white );
+            }
+        }
+    }
+    #footer-logo {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+    }
+    #back-to-top {
+        display: inline-block;
+        cursor: pointer;
+        background-color: map-get($mv-colors, mv-light-blue );
+        padding: 10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        i {
+            color: #01011b;
+            font-size: 2.5rem;
+            line-height: .8;
+        }
+    }
+}
+
+/* Modal */
+
+#modal-overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: $default-transition;
+}
+
+#modal-overlay.open{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10%);
+    transition: all 1s linear;
+}
+
+#modal{
+    position: relative;
+    top:50%;
+    margin: auto;
+    transform: translateY(-40%);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    @include mq-min-width( map-get( $breakpoints, sm) ) {
+        width: map-get($widths, half );
+        height: 50%;
+    }
+}
+
+#modal h2{
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+}
+
+#modal-close-container{
+    @include default-size;
+    padding: 10px 20px;
+    text-align: right;
+}
+#modal-close{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+}
+
+/* End Modal */
+
+/* Preload */
+  
+#preloader{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s linear;
+}
+
+#preloader.open{
+    opacity: 1;
+    visibility: visible;
+}
+  
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.eq-col-row {
+    @include mq-min-width( map-get( $breakpoints, md) ) {
+        display: table;
+        width: 100%;
+    }
+}
+.eq-col-row [class*="col-"] {
+    @include mq-min-width( map-get( $breakpoints, md) ) {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

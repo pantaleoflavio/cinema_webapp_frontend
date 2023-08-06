@@ -1,0 +1,20 @@
+@import 'variables';
+
+@mixin default-size() {
+    position: relative;
+    width: map-get( $widths,full );
+}
+
+@mixin mq-min-width( $width ) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin default-img() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+

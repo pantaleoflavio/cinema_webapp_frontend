@@ -1,0 +1,135 @@
+/* MOVIES WALL */
+.single-movie-poster {
+  position: relative;
+  width: 100%;
+  padding-bottom: 150%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.single-movie-block {
+  position: relative;
+  margin-bottom: 45px;
+  margin-top: 25px; }
+
+.single-movie-block h4 {
+  color: #fff !important; }
+
+/* END MOVIES WALL */
+/* Single movie page */
+#movie-data-container {
+  position: relative;
+  width: 100%;
+  height: auto; }
+
+#movie-data-container #video-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+#video-container #video-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 2; }
+
+#video-container #video-play {
+  position: absolute;
+  display: block;
+  top: 50px;
+  left: 50px;
+  z-index: 4;
+  cursor: pointer; }
+
+#video-container #video-play .video-play-element {
+  position: relative;
+  display: inline-block; }
+
+#video-container #video-play #play-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100px;
+  height: 100px; }
+
+#video-container #video-play #play-label-container {
+  height: 100px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #00adef;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-left: 15px;
+  line-height: 1; }
+
+#video-container video {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1; }
+
+#movie-data {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3; }
+
+.movie-info {
+  margin-top: 0;
+  text-align: center; }
+
+#movie-data h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #00adef;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: 700; }
+
+#movie-data h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+#movie-data h5 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.25; }
+
+/* END Single movie page */
+/*BREAKPOINTS*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #movie-data-container {
+    height: calc( 100vh - 10px ); }
+
+  #movie-data {
+    position: absolute; }
+
+  .single-movie-block {
+    margin-top: 0; }
+
+  .movie-info {
+    text-align: left; } }
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*# sourceMappingURL=single-movie.css.map */

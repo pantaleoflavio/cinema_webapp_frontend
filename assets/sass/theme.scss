@@ -1,0 +1,143 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Noto+Sans+Avestan&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+
+
+/* Colors */
+
+.c-whithe{
+    color: map-get($mv-colors, mv-white );
+}
+.c-light-blue{
+    color: map-get($mv-colors, mv-light-blue );
+}
+.c-black{
+    color: map-get($mv-colors, mv-black );
+}
+
+/* Backgrounds */
+
+.bg-transparent {
+    background-color: map-get($mv-colors, mv-white );
+}
+
+.bg-light-blue {
+    background-color: map-get($mv-colors, mv-light-blue );
+}
+
+.bg-dark-blue {
+    background-color: map-get($mv-colors, mv-dark-blue );
+}
+
+.bg-light-purple {
+    background-color: map-get($mv-colors, mv-light-purple );
+}
+
+.bg-dark-purple {
+    background-color: map-get($mv-colors, mv-dark-purple );
+}
+
+.bg-light-green {
+    background-color: map-get($mv-colors, mv-light-green );
+}
+
+.bg-dark-green {
+    background-color: map-get($mv-colors, mv-dark-green );
+}
+
+.bg-white {
+    background-color: map-get($mv-colors, mv-white );
+}
+
+.bg-black {
+    background-color: map-get($mv-colors, mv-black );
+}
+
+.section-title {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid map-get($mv-colors, mv-light-blue );
+    color: map-get($mv-colors, mv-white );
+    letter-spacing: 5px;
+    margin: 0 auto 75px;
+    display: inline-block;
+}
+
+.section-title-opaque-container{
+    position: relative;
+    display: inline-block;
+    background-color: map-get($mv-colors, mv-black-50p );
+    padding: 25px 15px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .section-title{
+        margin-bottom: 0;
+    }
+}
+
+.single-movie-title,
+.single-hall-title{
+    color: map-get($mv-colors, mv-white );
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.btn-mv {
+    padding: 14px 20px;
+    height: 45px;
+    border-radius: 5px;
+    color: map-get($mv-colors, mv-white );
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border: 0;
+
+    &:hover {
+        color: map-get($mv-colors, mv-white );
+        text-decoration: none;
+    }
+
+    &.btn-mv-blue {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#03b0f5+0,00597b+100 */
+        background: map-get($mv-colors, mv-light-blue ); /* Old browsers */
+        background: -moz-linear-gradient(top,  map-get($mv-colors, mv-light-blue ) 0%, map-get($mv-colors, mv-blue-50p ) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  map-get($mv-colors, mv-light-blue ) 0%,map-get($mv-colors, mv-blue-50p ) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  map-get($mv-colors, mv-light-blue ) 0%,map-get($mv-colors, mv-blue-50p ) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=map-get($mv-colors, mv-light-blue ), endColorstr=map-get($mv-colors, mv-blue-50p ),GradientType=0 ); /* IE6-9 */
+        transition: all .3s ease;
+
+        &:hover,
+        &:focus,
+        &.focus {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00597b+0,03b0f5+100 */
+            background: map-get($mv-colors, mv-blue-50p ); /* Old browsers */
+            background: -moz-linear-gradient(top,  map-get($mv-colors, mv-blue-50p ) 0%, map-get($mv-colors, mv-light-blue ) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  map-get($mv-colors, mv-blue-50p ) 0%,map-get($mv-colors, mv-light-blue ) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  map-get($mv-colors, mv-blue-50p ) 0%,map-get($mv-colors, mv-light-blue ) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=map-get($mv-colors, mv-blue-50p ), endColorstr=map-get($mv-colors, mv-light-blue ),GradientType=0 ); /* IE6-9 */
+        }
+    }
+
+    &.btn-mv-purple {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#03b0f5+0,00597b+100 */
+        background: map-get($mv-colors, mv-light-purple ); /* Old browsers */
+        background: -moz-linear-gradient(top,  map-get($mv-colors, mv-light-purple ) 0%, map-get($mv-colors, mv-dark-purple ) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  map-get($mv-colors, mv-light-purple ) 0%,map-get($mv-colors, mv-dark-purple ) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  map-get($mv-colors, mv-light-purple ) 0%,map-get($mv-colors, mv-dark-purple ) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=map-get($mv-colors, mv-light-purple ), endColorstr=map-get($mv-colors, mv-dark-purple ),GradientType=0 ); /* IE6-9 */
+        transition: all .3s ease;
+
+        &:hover,
+        &:focus,
+        &.focus {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00597b+0,03b0f5+100 */
+            background: map-get($mv-colors, mv-dark-purple ); /* Old browsers */
+            background: -moz-linear-gradient(top,  map-get($mv-colors, mv-dark-purple ) 0%, map-get($mv-colors, mv-light-purple ) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  map-get($mv-colors, mv-dark-purple ) 0%,map-get($mv-colors, mv-light-purple ) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  map-get($mv-colors, mv-dark-purple ) 0%,map-get($mv-colors, mv-light-purple ) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=map-get($mv-colors, mv-dark-purple ), endColorstr=map-get($mv-colors, mv-light-purple ),GradientType=0 ); /* IE6-9 */
+        }
+    }
+}

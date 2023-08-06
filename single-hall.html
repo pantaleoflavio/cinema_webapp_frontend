@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Movie Wall</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/public/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="assets/public/css/commons.css">
+    <link rel="stylesheet" href="assets/public/css/single-hall.css">
+</head>
+<body>
+<header id="header" class="bg-dark-blue">
+    <div id="logo">
+        <img src="./assets/img/musa-vision-logo.png" alt="">
+    </div>
+    <nav id="main-menu">
+        <div class="dt w-full h-full">
+            <div class="dtc va-m">
+                <ul>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <a href=""><i class="fa-solid fa-film"></i>Film</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <a href=""><i class="fa-solid fa-couch"></i>sale</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <a href=""><i class="fa-solid fa-ticket"></i>prenotazioni</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <a href=""><i class="fa-solid fa-phone"></i>CONTATTI</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="second-menu">
+        <div class="dt w-full h-full">
+            <div class="dtc va-m">
+                <ul>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <button id="login-btn" class="mv-header-btn">
+                                    login
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt w-full h-full">
+                            <div class="dtc va-m">
+                                <i id="serch-icon" class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main id="main" class="">
+    <section id="hall-data-container" class="">
+        <div class="hall-data-container-inner">
+            <div class="half-col hall-img hidden-xs hidden-sm">
+                <img src="assets/img/sala-1.png" alt="">
+            </div>
+            <div class="half-col hall-data">
+                <div class="hall-data-content">
+                    <div class="hall-data-row">
+                        <h2>
+                            Sala 1
+                        </h2>
+                    </div>
+                    <div class="hall-data-row">
+                        <h3>
+                            posti:
+                        </h3>
+                        <p>
+                            80
+                        </p>
+                    </div>
+                    <div class="hall-data-row">
+                        <h3>
+                            Schermo:
+                        </h3>
+                        <p>
+                            maxi
+                        </p>
+                    </div>
+                    <div class="hall-data-row">
+                        <h3>
+                            Servizi Aggiuntivi:
+                        </h3>
+                        <p>
+                            Aria condizionata
+                        </p>
+                        <p>
+                            3d
+                        </p>
+                    </div>
+                    <div class="hall-data-row">
+                        <button class="btn btn-primary btn-mv-purple btn-mv-md" type="button" data-toggle="modal" data-target="#exampleModal">
+                            Prenota
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="hall-carousel-container">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src="assets/img/halls/foto_01.png" alt=""></div>
+                            <div class="item"><img src="assets/img/halls/foto_02.png" alt=""></div>
+                            <div class="item"><img src="assets/img/halls/foto_03.png" alt=""></div>
+                            <div class="item"><img src="assets/img/halls/foto_04.jpg" alt=""></div>
+                            <div class="item"><img src="assets/img/halls/foto_01.png" alt=""></div>
+                            <div class="item"><img src="assets/img/halls/foto_02.png" alt=""></div>
+                            <div class="item"><img src="assets/img/halls/foto_03.png" alt=""></div>
+                            <div class="item"><img src="assets/img/halls/foto_04.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row eq-col-row">
+            <div class="col-xs-12 col-md-8 text-center pull-right">
+                <div id="footer-logo" style="background-image: url('assets/img/musa-vision-logo.png');"></div>
+            </div>
+            <div class="col-xs-12 col-md-2 pull-left">
+                <div id="footer-social-container">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-2 text-right hidden-xs hidden-sm">
+                <div id="back-to-top">
+                    <div class="dt w-full h-full">
+                        <div class="dtc va-m">
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            FORM DI RICHIESTA
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+<script src="assets/js/script-hall.js"></script>
+<script src="assets/js/script-api1.js"></script>
+</body>
+</html>
