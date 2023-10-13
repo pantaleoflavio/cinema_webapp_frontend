@@ -1,26 +1,58 @@
-# Cinema Showcase
+### Cinema Showcase ###
 
-A Frontend Project that simulate a Cinema Webapp. The project has a main page, where is possible to watch 
-a Pic gallery, the available Movies, the Halls and choose an action, like to watch the specific movie page,
-with the whole infos and the trailer of the movie (now it s implemented just one movie page).
-It is possible to check the Hall page, where it is possible to book a place and to watch a gallery of the Hall,
-there is a section for tosearch the desired movie, with desired date etc.
-The Webapp has also two modals (not jet implemented) one for a customer login, the other for the movie search
-section.
-The header has a list (not jet implemented) and the footer the logo and social links.
-The image gallery is dynamic, it can be possible to scroll through the images, with arrows and dots.
+# Overview #
 
-The pages are all responsive, for to improve the user experience.
+Cinema Showcase is a Frontend project designed to simulate a web application for a cinema. It provides a user-friendly interface for browsing movies, viewing movie details, exploring available halls, and making bookings. The project showcases frontend development skills using a range of technologies including HTML, CSS, SASS, Bootstrap 4, JavaScript, and various libraries like Owl Carousel and JQuery.
 
-The whole project will be implemented, in both sides, Front- and Backend, now I think it is enough to show my
-frontend skills: the project was written by using the follow techs:
+# Features #
+
+Main Page:
+- Displays a picture gallery.
+- Lists available movies.
+- Provides information on halls.
+- Allows users to perform actions like viewing specific movie details.
+
+Movie Page:
+- Offers comprehensive information about a selected movie.
+- Includes a trailer for the movie (currently only one movie page is implemented).
+
+Hall Page:
+- Allows users to book a place in a hall.
+- Displays a gallery of the selected hall.
+
+Movie Search (Not Yet Implemented):
+- Enables users to search for movies based on criteria such as date.
+
+Modals (Not Yet Implemented):
+- Customer login modal.
+
+Header (Not Yet Implemented):
+- Navigation list.
+-
+Footer:
+- Contains the project logo and links to social media platforms.
+
+Dynamic Image Gallery:
+- Supports scrolling through images using arrows and dots.
+
+Responsive Design:
+- All pages are designed to be responsive, ensuring an optimal user experience on various devices.
+
+# Technologies Used #
 - HTML
 - CSS
-- fundaments of SASS
+- Fundamentals of SASS
 - Bootstrap 4
-- Javascript
-- Libraries like Owl Carousel
-- JQuery also for the built of the APIs
+- JavaScript
+- Libraries: Owl Carousel, JQuery (used for API integration)
+
+# Future Development #
+While the current version of the project focuses on showcasing frontend skills, the intention is to implement both frontend and backend components in the future. This will further enhance the functionality and capabilities of the web application.
+
+# How to Run #
+Since this project is currently focused on the frontend, there are no specific steps required for setup. Simply open the HTML files in a web browser to view and interact with the web application.
+
+For future backend implementation, detailed setup instructions will be provided.
 
 The project need obviously an implementation, like the pages of the navbar, the modals, a dynamically creation of
 the Movie pages (with PHP), a Database.
