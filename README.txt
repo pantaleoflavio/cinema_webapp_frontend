@@ -51,8 +51,9 @@ While the current version of the project focuses on showcasing frontend skills, 
 
 # How to Run #
 Since this project is currently focused on the frontend, there are no specific steps required for setup. Simply open the HTML files in a web browser to view and interact with the web application.
+Be sure to include the Owl Carousel Dependencies.
 
-For future backend implementation, detailed setup instructions will be provided.
+For future backend implementation, detailed setup instructions will be provided (Already started here: https://github.com/pantaleoflavio/cinemaAppFS . It been rebuilt from scratch the whole Frontend Structure).
 
 The project need obviously an implementation, like the pages of the navbar, the modals, a dynamically creation of
 the Movie pages (with PHP), a Database.
